@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body bg-gray-100 text-black;
+  }
+}
+
+@layer components {
+  .sign-form {
+    @apply flex flex-col gap-6 container max-w-md;
+  }
+
+  .form-input {
+    @apply border-2 border-neutral-300 px-4 py-3   w-full focus:border-purple-600 placeholder:text-neutral-500 rounded-full focus:outline-none focus:shadow-md;
+  }
+
+  .btn {
+    @apply inline-block cursor-pointer px-4 py-3 rounded-full;
+  }
+
+  .btn-primary {
+    @apply bg-purple-600 text-white hover:bg-purple-700;
+  }
+}
